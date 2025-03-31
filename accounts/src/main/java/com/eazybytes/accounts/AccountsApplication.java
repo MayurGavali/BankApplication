@@ -12,17 +12,17 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 @SpringBootApplication
 @EnableCaching
-/*@ComponentScans({ @ComponentScan("com.eazybytes.accounts.controller") })
-@EnableJpaRepositories("com.eazybytes.accounts.repository")
-@EntityScan("com.eazybytes.accounts.model")*/
+/*@ComponentScans({ @ComponentScan("com.bank.accounts.controller") })
+@EnableJpaRepositories("com.bank.accounts.repository")
+@EntityScan("com.bank.accounts.model")*/
 @EnableJpaAuditing(auditorAwareRef = "auditAwareImpl")
 @OpenAPIDefinition(
 		info = @Info(
 				title = "Accounts microservice REST API Documentation",
-				description = "EazyBank Accounts microservice REST API Documentation",
+				description = "Bank Accounts microservice REST API Documentation",
 				version = "v1",
 				contact = @Contact(
-						name = "Mayur Gavali",
+						name = "Mayer",
 						email = "mayur@gmail.com",
 						url = "mayur@gmail.com"
 				),
@@ -32,8 +32,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 				)
 		),
 		externalDocs = @ExternalDocumentation(
-				description =  "EazyBank Accounts microservice REST API Documentation",
-				url = ""
+				description =  "Bank Accounts microservice REST API Documentation",
+				url = "bank@gmail.com"
 		)
 )
 public class AccountsApplication {
