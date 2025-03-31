@@ -12,9 +12,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 @SpringBootApplication
 @EnableCaching
-/*@ComponentScans({ @ComponentScan("com.bank.accounts.controller") })
-@EnableJpaRepositories("com.bank.accounts.repository")
-@EntityScan("com.bank.accounts.model")*/
 @EnableJpaAuditing(auditorAwareRef = "auditAwareImpl")
 @OpenAPIDefinition(
 		info = @Info(
